@@ -1,0 +1,141 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+    display: flex;
+    background-color: black;
+}
+
+@font-face {
+    font-family: norse-bold;
+    src: url(./fonts/Norse-Bold.otf);
+}
+
+@font-face {
+    font-family: berserk-bold;
+    src: url(./fonts/Berzierk-LO7D.ttf);
+}
+
+/* ===== Left Side ===== */
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 70vw;
+    height: 100vh;
+    background-image: url(./images/guts.jpg);
+    background-size: cover;
+    text-align: center;
+}
+
+.odin-logo {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    margin-top: 22vh;
+    font-family: berserk-bold;
+    font-size: 4rem;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.thor {
+    height: max(78px, 15vh);
+}
+
+/* ===== Right Side ===== */
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    margin-top: 95px;
+    align-items: center;
+    
+}
+
+.main-text {
+    color: white;
+    text-align: center;
+    font-family: berserk-bold;
+    font-size: 30px;
+    font-weight: 800;
+    margin: 20px 0;
+    max-width: 100%; 
+    padding: 20px;
+    box-sizing: border-box;
+    
+}
+
+/* ===== Form ===== */
+
+.form-container {
+    font-family: berserk-bold;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    padding: 2vw;
+    box-sizing: border-box;
+    align-items: center;
+}
+.input-container {
+    display: flex;
+    gap: 80px;
+    margin-top: 25px;
+    color: white;
+    font-size: 35px;
+}
+
+input {
+    border: 1px solid black;
+    padding: 10px;
+    width: 300px;
+    border-radius: 5px;
+}
+input:focus{
+    outline: none;
+    box-shadow: 0 3px 10px darkgray;
+}
+
+input:invalid {
+    outline: none;
+    border: solid 1px rgb(255, 0, 0);
+    box-shadow: 0 3px 10px darkgray;
+}
+
+.submit {
+    margin: 30px 30px;
+    align-items: center;
+    text-align: center;
+}
+
+.account-qst {
+    margin-top: 30px;
+    color: white;
+}
+
+.btn-submit {
+    font-family: berserk-bold;
+    font-size: 20px;
+    padding: 15px;
+    width: 200px;
+    color: black;
+    cursor: pointer;
+    box-shadow: 0 3px 10px darkgray;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+
+}
+
+.btn-submit:hover {
+    color: white;
+    background-color: black;
+    box-shadow: 0 3px 10px darkgray;
+}
